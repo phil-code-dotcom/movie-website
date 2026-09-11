@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black font-poppins lg:px-30 md:px-20 px-10">
+
+    <section class="w-full sm:min-h-screen h-auto">
+        <nav class="w-full py-4 xl:px-25 flex items-center md:justify-between gap-4">
+
+            <div class="lg:flex hidden items-center w-fit h-fit lg:gap-4 text-white">
+                <a href="#" class="text-base font-medium">Home</a>
+                <a href="#" class="text-base font-medium">Genre</a>
+                <a href="#" class="text-base font-medium">Country</a>
+            </div>
+
+            <div class="bg-white w-full max-w-104 sm:h-12 h-8 rounded-3xl flex items-center justify-between p-3 flex-1">
+                <p class="text-[8px] sm:text-[16px]">Search movies.......</p>
+                <img src="../assets/search-icon.svg" alt="search icon" class="w-4 md:w-6">
+            </div>
+
+            <div class="lg:flex hidden items-center w-fit h-fit lg:gap-4 text-white">
+                <a href="#" class="text-base font-medium">Movies</a>
+                <a href="#" class="text-base font-medium">Series</a>
+                <a href="#" class="text-base font-medium">Animation</a>
+
+            </div>
+
+            <div class="flex gap-4 items-center justify-center lg:ml-auto">
+                <a href="#" class="text-white font-medium hidden md:flex">Login/Signup</a>
+                <img src="../assets/notifications.svg" alt="notification" class="w-3 h-4">
+                <img src="../assets/hamburger.svg" alt="hamburger" class="lg:hidden">
+            </div>
+        </nav>
+
+        <!--main Movie-->
+        <main class="w-full h-fit mx-auto mt-10 mb-14 grid grid-cols-1 grid-rows-1">
+            <img src="./assets/full-movie.png" alt="movie" class="w-full h-full row-start-1 col-start-1">
+
+            <div
+                class="w-full flex flex-col gap-2 row-start-1 col-start-1 self-end justify-self-center pb-[3%] px-[7%]">
+                <img src="./assets/movie-scroll.svg" alt="movie-scroll" class="w-full">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center justify justify-between w-full md:max-w-[150px] max-w-[20%]">
+                        <p class="font-medium md:text-[16px] text-[9px] text-white">38:18 / 50:38</p>
+                        <img src="./assets/speaker.svg" alt="speaker" class="md:w-[31px] md:h-[25px] w-3 h-3">
+                    </div>
+                    <div class="flex items-center justify-between w-full md:max-w-[102px] max-w-[30%]">
+                        <img src="./assets/video-back.svg" alt="video-back" class="w-3 h-3 md:h-[17px] md:w-[17px]">
+                        <img src="./assets/pause-btn.svg" alt="pause-button" class="w-3 h-3 md:h-[20px] md:w-[20px]">
+                        <img src="./assets/video-forward.svg" alt="video-forward"
+                            class="w-3 h-3 md:h-[17px] md:w-[17px]">
+                    </div>
+                    <div class="flex items-center justify-between w-full md:max-w-[108px] max-w-[30%]">
+                        <img src="./assets/video-cc.svg" alt="video-cc" class="w-3 h-3 md:h-[20px] md:w-[18px]">
+                        <img src="./assets/settings.svg" alt="settings" class="w-3 h-3 md:h-[20px] md:w-[20px]">
+                        <img src="./assets/full-screen-btn.svg" alt="full-screen-button"
+                            class="w-3 h-3 md:h-[20px] md:w-[18px]">
+                    </div>
+                </div>
+            </div>
+
+            <img src="./assets/video-icon.svg" alt="video-icon"
+                class="w-[34px] h-[32px] row-start-1 col-start-1 justify-self-end self-center mr-8">
+        </main>
+    </section>
+
+    <!--add to favorite section-->
+    <section class="flex lg:flex-nowrap flex-wrap gap-6 items-center min-h-[576px] w-full">
+        <div class="sm:min-w-[352px] lg:w-[400px] w-full">
+            <img src="./assets/silo-img.png" alt="silo image" class="sm:h-[576px] h-[350px] w-full">
+        </div>
+
+        <div class="self-start flex flex-col text-white w-full">
+            <div class="flex items-center justify-between">
+                <h6 class="font-semibold text-4xl">Silo</h6>
+                <button class="block max-w-[190px] max-h-[56px] bg-[#FF0000] rounded-2xl p-4 font-normal text-[16px]">+
+                    Add to Favorite</button>
+            </div>
+            <div class="flex gap-6 items-center flex-wrap mt-10">
+                <div class="flex gap-2 items-center">
+                    <button
+                        class="flex items-center justify-center w-[80px] h-[44px] rounded-[10px] bg-white p-2.5 text-black font-semibold text-16px] rounded-3xl">Action</button>
+                    <button
+                        class="flex items-center justify-center w-[142px] h-[44px] rounded-[10px] bg-white p-2.5 text-black font-semibold text-[16px] rounded-3xl">Science
+                        Fiction</button>
+                </div>
+                <div class="flex gap-2.5">
+                    <div class="flex gap-2.5 w-[85.13px] h-11 items-center">
+                        <img src="./assets/calender.svg" alt="calender" class="w-4.25 h-4.25">
+                        <p class="font-medium text-[16px]">2022</p>
+                    </div>
+                    <div class="flex gap-2.5 w-24 h-11 items-center">
+                        <img src="./assets/time.svg" alt="clock" class="w-3.25 h-3.25">
+                        <p class="font-medium text-[16px]">50:38</p>
+                    </div>
+                    <div class="flex gap-2.5 w-18 h-11 items-center">
+                        <img src="./assets/star.svg" alt="star" class="w-4.25 h-4">
+                        <p class="font-medium text-[16px]">8.5</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="max-w-[708px] font-normal text-[16px] leading-6 mt-7 mb-3">In a ruined and toxic future, a
+                community
+                exists in a giant underground silo that plunges
+                hundreds of stories deep. There, men and women live in a society full of regulations they
+                believe are meant to protect them.
+            </p>
+
+            <div class="text-white font-normal text-[16px] p-6">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-[auto_minmax(16px,auto)_1fr] gap-y-3 sm:gap-y-2.5 items-start">
+                    <div class="text-left sm:text-right font-semibold sm:font-normal text-gray-400 sm:text-white">
+                        Country</div>
+                    <div class="hidden sm:block text-center">:</div>
+                    <div class="leading-relaxed">United States</div>
+                    <div class="text-left sm:text-right font-semibold sm:font-normal text-gray-400 sm:text-white">Genre
+                    </div>
+                    <div class="hidden sm:block text-center">:</div>
+                    <div class="leading-relaxed">Drama, Science Fiction</div>
+                    <div class="text-left sm:text-right font-semibold sm:font-normal text-gray-400 sm:text-white">Date
+                        Release</div>
+                    <div class="hidden sm:block text-center">:</div>
+                    <div class="leading-relaxed">May 05, 2023</div>
+                    <div class="text-left sm:text-right font-semibold sm:font-normal text-gray-400 sm:text-white">
+                        Production</div>
+                    <div class="hidden sm:block text-center">:</div>
+                    <div class="leading-relaxed">AMC Studios</div>
+                    <div class="text-left sm:text-right font-semibold sm:font-normal text-gray-400 sm:text-white">Cast
+                    </div>
+                    <div class="hidden sm:block text-center">:</div>
+                    <div class="leading-relaxed max-w-full sm:max-w-[338px]">
+                        Tim Robbins, Rebecca Ferguson, Avi Nash, Rashida Jones, David Oyelowo, Tim Robbins
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--season 1-->
+    <section class="mt-12 flex flex-col gap-6 w-full">
+        <div class="flex items-center gap-4">
+            <p class="font-medium text-2xl text-white">Season 1</p>
+            <img src="./assets/down-arrow.svg" alt="down arrow" class="w-[22px] h-[13px]">
+        </div>
+
+        <!--episodes-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-7">
+            <div class="flex flex-col gap-6">
+                <div class="h-[58px] rounded-[5px] bg-[#FF0000] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/white-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-white text-[16px]">Episode 1: Freedom Day</p>
+                </div>
+                <div class="h-[58px] rounded-[5px] bg-[#D9D9D9] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/ash-color-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-black text-[16px]">Episode 2: Holston’s Pick</p>
+                </div>
+                <div class="h-[58px] rounded-[5px] bg-[#D9D9D9] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/ash-color-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-black text-[16px]">Episode 3: Machines</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="h-[58px] rounded-[5px] bg-[#D9D9D9] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/ash-color-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-black text-[16px]">Episode 4: Truth</p>
+                </div>
+                <div class="h-[58px] rounded-[5px] bg-[#D9D9D9] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/ash-color-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-black text-[16px]">Episode 5: The Janitor’s Boy</p>
+                </div>
+                <div class="h-[58px] rounded-[5px] bg-[#D9D9D9] p-2.5 pl-4 flex items-center gap-4">
+                    <img src="./assets/ash-color-play.svg" alt="play button" class="w-[13px] h-[13px]">
+                    <p class="font-normal text-black text-[16px]">Episode 6: The Relic</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--you may also like-->
+    <section class="mt-10 flex flex-col gap-5 text-white">
+            <h2 class="font-semibold text-2xl">You may also like</h2>
+
+        <!--grid container-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
+            <!--Card 1-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Black Knight</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 2-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Drops of God</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Scoop</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 4-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">The Prank Panel</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 5-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Nikita</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 6-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">From</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 7-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Spy/Master</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 8-->
+            <div class="flex flex-col gap-4">
+                <img src="./assets/new-release-movies-1.jpg" alt=""
+                        class="w-full h-full rounded-[10px]">
+                <div class="flex items-center">
+                    <p class="font-medium text-[16px]">Little Bird</p>
+                    <div class="flex gap-2 w-fit h-fit max-w-[117px] max-h-[32px] ml-auto items-center">
+                        <button
+                            class="flex items-center justify-center w-[31px] h-[32px] rounded-[5px] bg-[#FF0000]">HD</button>
+
+                        <div
+                            class="flex gap-2 w-fit h-fit max-w-[82px] max-h-[32px] rounded-[5px] border p-1 border-[#FF0000] items-center">
+                            <p class="font-medium text-[16px]">Season 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
